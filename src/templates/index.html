@@ -1,0 +1,90 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	
+	{# partial example #}
+	<div class="container">
+		<div class="wrapper">
+			<div class="wrapper__sidebar">
+				{% include "partials/_sidebar.html" %}
+			</div>
+
+
+			<div class="container wrapper__content">
+				<div class="chat-wrapper">
+					<div class="chat">
+						<div class="chat__in">
+							<div class="chat__item chat__item_right chat__item_arr chat__item_arr-right">
+								<p class="text">Hello there! I'm interested in your product</p>
+								<div class="chat__time">21:40</div>
+							</div>
+							<div class="chat__item chat__item_right">
+								<p class="text">Wanna some contract today?</p>
+								<div class="chat__time">21:41</div>
+							</div>
+							<div class="chat__item chat__item_left chat__item_arr chat__item_arr-left">
+								<p class="text">Yeah, i just accept</p>
+								<div class="chat__time">22:10</div>
+							</div>
+							<div class="chat__item chat__item_left">
+								<p class="text">=)</p>
+								<div class="chat__time">22:11</div>
+							</div>
+						</div>
+						<div class="chat__divider">
+							<a href="#" class="link">YESTERDAY</a>
+						</div>
+						<div class="chat__in">
+							<div class="chat__item chat__item_right chat__item_arr chat__item_arr-right">
+
+								<p class="text">Hello there! I'm interested in your product</p>
+								<div class="chat__time">21:40</div>
+							</div>
+							<div class="chat__item chat__item_right">
+								<p class="text">Wanna some contract today?</p>
+								<div class="chat__time">21:41</div>
+							</div>
+							<div class="chat__item chat__item_left chat__item_arr chat__item_arr-left">
+								<div class="chat__ava ava">
+									<img src="./img/ava2.jpg" class="ava__pic" width="40" height="40" alt="">
+								</div>
+								<p class="text">Yeah, i just accept</p>
+								<div class="chat__time">22:10</div>
+							</div>
+							<div class="chat__item chat__item_left">
+								<p class="text">=)</p>
+								<div class="chat__time">22:11</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-footer">
+						<div class="input input_big chat-footer__input">
+							<input type="text" placeholder="Type messege here">
+						</div>
+						<div class="chat-footer__btns">
+							<button type="button" class="clip"></button>
+							<button type="submit" class="link">SEND</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		
+	</div>
+
+
+	
+
+	
+
+
+	
+
+{% endblock %}

@@ -1,0 +1,26 @@
+.timeline
+  &__item
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    background: transparent 
+    border-radius: 10px
+    padding: 4px 13px
+    line-height: normal
+    font-size: 10px
+    color: rgba(#000, .2)
+    pointer-events: none
+    +roboto-m
+    +tr(opacity .3s)
+    &:not(:last-child)
+      margin-right: 20px
+    &.is-active
+      background: #36d1dc
+      color: #fff
+      &:not(:first-child)
+        &:before
+          content: ''
+          position: absolute
+          left: -12px
+          top: 6px
+          +arr(4, 6, #36d1dc, r) 

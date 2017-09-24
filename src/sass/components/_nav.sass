@@ -1,0 +1,66 @@
+.nav
+  font-size: 0
+  &__item
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    +tr(background .3s) 
+    &.is-active, &:hover
+      background: rgba(#000, .1) 
+    &.is-active
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 50% 
+        transform: translateX(-50%)
+        +arr(10, 5, #fff, t)
+    &:last-child 
+      margin-left: 80px
+      +r(1280)
+        margin-left: 0
+  &__link
+    display: inline-block
+    padding: 29px 26px
+    font-size: 15px 
+    color: #fff
+    +r(1100)
+      padding: 29px 20px 
+    span
+      display: inline-block
+      vertical-align: middle
+      max-width: 90px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis   
+ 
+
+.hidden-block 
+  display: none
+  margin-left: 340px
+  background: #FFF
+  position: absolute
+  left: 0
+  right: 0
+  top: 100% 
+  z-index: 99 
+  box-shadow: -1px 2px 5px 0 #f0f0f0
+  &.is-open
+    display: block
+  &__header
+    padding: 20px 20px 20px 30px  
+    border-bottom: 1px solid #f0f0f0
+    +clr
+  &__header-left
+    float: left
+    width: 60%
+  &__header-right
+    float: left
+    width: 40%
+  &__content
+    padding: 23px 30px 
+    +clr
+  &__link
+    float: left
+    width: 25%  
+    

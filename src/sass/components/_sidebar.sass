@@ -1,0 +1,36 @@
+.sidebar
+  
+  &__header
+    white-space: nowrap
+    overflow: hidden
+  &__header-btn, &__header-input
+    display: inline-block
+    vertical-align: top
+  &__header-btn
+    background: #FFF
+    padding: 33px 30px 
+    max-width: 130px
+    overflow: hidden  
+  &__header-input
+    background: #f0f0f0 
+    padding: 33px 35px
+    
+
+  &__body
+    position: relative
+    border-style: solid
+    border-width: 1px 1px 0 0
+    border-color: #f0f0f0 
+    padding: 40px 15px 40px 40px 
+    height: calc(100vh - 170px) 
+    overflow-Y: auto
+    &:after
+        content: ""  
+        position: absolute
+        right: 0
+        top: 10px
+        width: 15px
+        bottom: 10px 
+        z-index: 5 
+        box-shadow: -5px 0px 11px 0px #fff
+    

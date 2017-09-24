@@ -1,0 +1,19 @@
+<a href="#" class="client">
+	<div class="client__ava ava">
+		<img src="./img/ava2.jpg" class="ava__pic" width="40" height="40" alt="">
+	</div>
+	<div class="client__about">
+		<div class="client__header">
+			<div class="client__header-left">
+				<p class="medium">Michael Davis</p>
+				<p>Contract #1244</p>
+			</div>
+			{% if loop.first %}
+			<div class="client__header-right text-right">
+				 <span class="indicator"><span class="indicator__in">5</span></span> 
+			</div>
+			{% endif %}
+		</div>
+		<p class="gray-color client__about-text">Michael: Yeah, i just accept my proposal!</p>
+	</div>
+</a>

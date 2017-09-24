@@ -1,0 +1,29 @@
+.client
+  display: inline-block
+  vertical-align: top
+  &:not(:last-child)
+    margin-bottom: 20px
+  &:hover .client__about
+    opacity: .7 
+  p
+    font-size: 13px  
+  &__ava
+    float: left
+    margin-right: 30px 
+  &__about
+    overflow: hidden
+  &__about-text
+    white-space: nowrap
+  &__header
+    position: relative
+    +clr
+
+  &__header-left
+    padding-right: 30px
+    p
+      color: #000
+  &__header-right
+    position: absolute
+    right: 5px
+    top: 0
+    z-index: 10 

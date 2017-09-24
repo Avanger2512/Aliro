@@ -1,0 +1,22 @@
+<sidebar class="sidebar">
+	<div class="sidebar__header">
+		<div class="sidebar__header-btn">
+			<a href="#" class="link">messages</a>
+		</div>
+		<div class="sidebar__header-input">
+			<div class="input input_pic">
+				<input type="text" placeholder="CLIENTS" value="CLIENTS">
+				<button type="submit" class="input__icon icon icon-search"></button> 
+			</div>
+		</div>
+	</div>
+	<div class="sidebar__body">
+		
+
+		{% for i in range(0, 10) %}
+
+			{% include "partials/_client.html" %}
+
+		{% endfor %}
+	</div>
+</sidebar>

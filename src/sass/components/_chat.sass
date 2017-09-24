@@ -1,0 +1,101 @@
+.chat
+  
+  &__in 
+    min-height: 280px 
+    padding: 35px 0 
+  &__item
+    position: relative
+    margin: 0 90px
+  &__item_right
+    text-align: right 
+    .text
+      background: #f0f0f0
+  &__item_left
+    text-align: left
+    .text
+      border: 1px solid #f0f0f0
+      background: #fff 
+  &__item_arr
+    .text
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: -4px
+        z-index: 2 
+  &__item_arr-right
+    .text
+      &:after
+        left: 100%
+        +arr(4, 8, #f0f0f0, r)
+  &__item_arr-left
+    .text
+      &:after
+        right: 100%
+        +arr(5, 10, #f0f0f0, l)
+      &:before
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: -3px
+        z-index: 3 
+        left: -4px
+        +arr(5, 8, #fff, l)
+  &__divider
+    padding: 22px 29px 
+    border-top: 1px solid #f0f0f0 
+    border-bottom: 1px solid #f0f0f0
+  &__time
+    position: absolute
+    left: calc(100% + 25px)
+    top: 14px
+    font-size: 10px
+    color: #d8d8d8
+    +roboto-m
+  &__ava
+    position: absolute
+    right: calc(100% + 25px)
+    top: 0
+.text
+  display: inline-block
+  vertical-align: middle
+  color: #000
+  font-size: 13px
+  padding: 12px 20px
+  border-radius: 5px
+  margin-bottom: 10px  
+  +roboto-m   
+
+.chat-footer
+  position: fixed
+  left: 340px
+  right: 15px
+  bottom: 0
+  padding: 32px 52px 32px 29px 
+  border-top: 1px solid #f0f0f0
+  background: #FFF 
+  +clr  
+  +r(1070)
+    right: 0
+  &__btns 
+    position: absolute
+    right: 52px
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 2
+    // float: right
+.chat-wrapper
+  position: relative
+  height: calc(100vh - 81px) 
+  overflow-Y: auto 
+  padding: 81px 0 83px 0 
+.clip
+  display: inline-block
+  vertical-align: top
+  width: 20px
+  height: 20px 
+  background: url('../img/clip.svg') no-repeat
+  background-size: contain
+  margin: -2px 30px 0 0 
+  

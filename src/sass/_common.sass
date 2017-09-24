@@ -1,0 +1,83 @@
++font(RobotoMedium, "RobotoMedium")
++font(RobotoRegular, "RobotoRegular")
++font(RobotoBlack, "RobotoBlack")
+
+=roboto
+  font-family: RobotoRegular, Arial, Helvetica, sans-serif
+=roboto-m
+  font-family: RobotoMedium, Arial, Helvetica, sans-serif
+=roboto-b
+  font-family: RobotoBlack, Arial, Helvetica, sans-serif
+
+body
+  background: #FFF
+  line-height: 1.4
+  font-size: 13px
+  min-width: 1024px
+  +roboto
+
+a
+  text-decoration: none
+
+
+.container
+
+
+
+.indicator
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  background: #36d1dc 
+  margin-left: 3px
+  &__in
+    position: absolute 
+    font-size: 10px 
+    color: #fff
+    z-index: 2
+    line-height: normal 
+    +vcenter
+    +roboto-m
+
+
+.reg
+  +roboto
+.medium 
+  +roboto-m
+
+.wtite-color
+  color: #fff
+   
+
+.wrapper
+  display: flex
+  flex-flow: row nowrap
+  width: 100%
+  &__sidebar
+    width: 340px
+    flex: 0 0 auto
+  &__content
+    flex: 1 1 auto 
+    
+
+.icon-search
+  font-size: 18px
+  color: #4990e2
+.icon-clip
+  font-size: 18px
+  color: #000
+.gray-color
+  color: #4a4a4a
+  
+.link
+  color: #4990e2
+  font-size: 12px 
+  letter-spacing: 1px
+  text-transform: uppercase
+  +roboto-m 
+  +tr(opacity .3s)
+  &:hover, &:active
+      opacity: .8  
